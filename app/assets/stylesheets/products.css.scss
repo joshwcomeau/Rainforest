@@ -2,6 +2,13 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+body {
+  font-family: 'Ruluko';
+}
+p {
+  font-family: 'Sniglet';
+}
+
 a, a:visited {
   color: #02CFF7;
   text-decoration: none;
@@ -111,7 +118,10 @@ a:hover {
 
 
 
-
+/* Show product */
+#show_product_edit_link {
+  color: #F00;
+}
 
 
 
