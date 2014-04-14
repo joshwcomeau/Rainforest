@@ -7,6 +7,13 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+<%= image_tag "rainforest_logo.png", class: "logo" %>
+
+<div class="add_product_button">
+  <div class="add_product_link">
+    <%= link_to "+", new_product_path %>
+  </div>
+</div>
 
 <%= yield %>
 

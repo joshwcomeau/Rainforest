@@ -1,0 +1,5 @@
+<div class="show_product_wrapper">
+  <h1><%= @product.name %></h1>
+  <p class="show_product_description"><%= @product.description %></p>
+  <p class="show_product_price">Only <sup>$</sup><%= @product.price_in_cents.to_i * 0.01 %></p>
+</div>
