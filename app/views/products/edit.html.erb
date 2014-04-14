@@ -1,16 +1,6 @@
 <div class="new_product_container">
   <h1>Edit Product</h1>
-  <%= form_for @product do |f| %>
-  <%= f.label "Product Name:" %>
-  <%= f.text_field :name %>
+  <%= render 'form' %>
   <br>
-  <%= f.label "Product Description:" %>
-  <%= f.text_area :description %>
-  <br>
-  <%= f.label "Price (in cents):" %>
-  <%= f.text_field :price_in_cents %>
-  <br><br>
-  <%= f.submit "Update product" %>
-
-  <% end %>
+  <%= link_to "< Back", products_path %>
 </div>
