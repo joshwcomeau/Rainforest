@@ -28,6 +28,30 @@ a:hover {
 }
 
 
+
+.flash_alert {
+  border-top: 1px solid #FFB39E;
+  border-bottom: 1px solid #FFB39E;
+  width: 110%;
+  margin: 15px -25px;
+  padding: 7px;
+  background: #FFD0C9;
+  text-align: center;
+}
+  .flash_alert strong {
+    color: #DB3E2A;
+  }
+.flash_notice {
+  border-top: 1px solid #5BE1F0;
+  border-bottom: 1px solid #5BE1F0;
+  width: 110%;
+  margin: 15px -25px;
+  padding: 7px;
+  background: #B1EFFC;
+  text-align: center;
+}
+
+
 .logo {
   width: 350px;
   margin-left: 20px;

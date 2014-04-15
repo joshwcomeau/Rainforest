@@ -18,10 +18,17 @@
 
 <div class="user_panel">
   <ul>
-    <li>Log In</li>
+    <li><%= link_to "Log In", new_session_path %></li>
     <li><%= link_to "Register Account", new_user_path %></li>
   </ul>
 </div>
+
+<% if flash[:alert] %>
+  <div class="flash_alert"><strong>Error:</strong> <%= flash[:alert] %></div>
+<% end %>
+<% if flash[:notice] %>
+  <div class="flash_notice"><%= flash[:notice] %></div>
+<% end %>
 
 <%= yield %>
 
