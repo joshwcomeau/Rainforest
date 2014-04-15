@@ -1,7 +1,7 @@
 <%= form_for @product do |f| %>
   <% if @product.errors.any? %>
     <div id="error_explanation">
-      <h4>Oh no! We found <%= @product.errors.count ; pluralize(@product.errors.count, "error")%>!</h4>
+      <h4>Oh no! We found <%= pluralize(@product.errors.count, "error")%>!</h4>
 
       <ul>
         <% @product.errors.full_messages.each do |msg| %>

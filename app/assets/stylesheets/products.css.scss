@@ -24,6 +24,7 @@ a:hover {
 }
 .add_product_button {
   position: absolute;
+  z-index: 5;
   width: 200px;
   height: 200px;
   right: -100px;
@@ -51,6 +52,36 @@ a:hover {
   text-decoration: none;
   color: #FFF;
 }
+
+
+.user_panel {
+  position: absolute;
+  z-index: 2;
+  top: 0px;
+  right: 85px;
+  padding: 5px 20px;
+  background: rgba(0,0,0,0.25);
+  border-radius: 0px 0px 0px 10px;
+}
+.user_panel ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.user_panel li {
+  display: inline-block;
+  padding: 4px 15px;
+  border-right: 1px solid #999;
+  font-size: 11px;
+}
+.user_panel li:last-child {
+  border-right: 0px;
+}
+.user_panel a {
+  color: #000;
+}
+
+
 
 /* INDEX */
 .index_product_div {
