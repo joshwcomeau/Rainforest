@@ -6,3 +6,8 @@
       | 
      <%= link_to "Delete", product_path(@product.id), method: :delete, id: "show_product_edit_link" %>
 </div>
+
+<div class="reviews_wrapper">
+  <%= render 'show_reviews' %>
+  <%= render 'add_review' %>
+</div>
