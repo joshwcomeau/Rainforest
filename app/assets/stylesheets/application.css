@@ -114,6 +114,10 @@ a:hover {
 .user_panel a {
   color: #000;
 }
+.current_user_email {
+  font-style: italic;
+  color: #005A6E;
+}
 
 input[type=text], input[type=email], input[type=password], textarea {
   display: block;

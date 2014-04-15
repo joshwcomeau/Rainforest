@@ -18,8 +18,13 @@
 
 <div class="user_panel">
   <ul>
-    <li><%= link_to "Log In", new_session_path %></li>
-    <li><%= link_to "Register Account", new_user_path %></li>
+    <% if current_user %>
+      <li>Logged in as <span class="current_user_email"><%= current_user.email %></span>.</li>
+      <li><%= link_to "Log out", session_path("current"), method: :delete %></li>
+    <% else %>
+      <li><%= link_to "Log In", new_session_path %></li>
+      <li><%= link_to "Register Account", new_user_path %></li>
+    <% end %>
   </ul>
 </div>
 
