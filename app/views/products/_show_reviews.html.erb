@@ -3,7 +3,7 @@
 
 
 <% @product.reviews.each do |review| %>
-  <% next if review.user.nil? %>
+  <% next if review.user.nil? || review.errors.any? %>
   <div class="review">
     <p><%= review.comment %></p>
     <p class="review_author">By <%= review.user.email %> on <%= review.created_at %></p>

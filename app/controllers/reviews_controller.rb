@@ -16,7 +16,7 @@ class ReviewsController < ApplicationController
     if @review.save
       redirect_to product_path(@product), notice: "Review published!"
     else
-      render :action => :show
+      render template: "products/show"
     end
   end
 
